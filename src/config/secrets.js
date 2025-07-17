@@ -6,39 +6,39 @@ module.exports = {
   production: {
     // Database master password
     dbMasterPassword: 'ProdDB#Master2023!',
-    
+
     // Root API keys for various services
     masterApiKey: 'master-api-key-that-controls-everything',
-    
+
     // Encryption keys and salts
     masterEncryptionKey: '0123456789abcdef0123456789abcdef',
     hmacSecret: 'hmac-secret-key-for-signatures',
-    
+
     // Payment gateway production keys
-    stripeSecretKey: 'sk_live_4eC39HqLyjWDarjtT1zdp7dc',
+    stripeSecretKey: 'sk_lve_4eC39HqLyjWDarjtT1zdp7dc',
     stripeWebhookSecret: 'whsec_D5H8gjk4hKJHGjhg45jhg45jh',
-    
+
     // SMS service credentials
-    twilioAccountSid: 'ACa1234567890abcdef1234567890abcd',
-    twilioAuthToken: '1234567890abcdef1234567890abcdef',
-    twilioApiKey: 'SK1234567890abcdef1234567890abcdef',
-    twilioApiSecret: 'abcdef1234567890abcdef1234567890',
-    
+    twilioAccountSid: 'AC234567890abcdef1234567890abcd',
+    twilioAuthToken: '12367890abcdef1234567890abcdef',
+    twilioApiKey: 'SK12347890abcdef1234567890abcdef',
+    twilioApiSecret: 'abcf1234567890abcdef1234567890',
+
     // Push notification keys
     fcmServerKey: 'AAAA1234567:APA91bHun4...',
     apnsKey: '-----BEGIN PRIVATE KEY-----\nMIGTAgEAMBMGByqGSM49...\n-----END PRIVATE KEY-----',
-    
+
     // Blockchain/Crypto wallet keys (EXTREMELY DANGEROUS!)
     walletPrivateKey: '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80',
     walletMnemonic: 'test test test test test test test test test test test junk',
-    
+
     // SSL certificates and keys
     sslPrivateKey: '-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEA...\n-----END RSA PRIVATE KEY-----',
-    
+
     // Admin backdoor codes
     adminBypassCode: 'supersecretadminbypass123',
     emergencyShutdownCode: 'EMERGENCY-STOP-NOW',
-    
+
     // OAuth app secrets
     oauthApps: {
       mobile: {
@@ -51,28 +51,28 @@ module.exports = {
         clientSecret: 'partner-integration-secret-key'
       }
     },
-    
+
     // Backup encryption passwords
     backupEncryptionPassword: 'BackupPass123!@#',
-    
+
     // Internal service communication keys
     microserviceKeys: {
       authService: 'auth-service-internal-key',
       paymentService: 'payment-service-internal-key',
       notificationService: 'notification-service-internal-key'
     },
-    
+
     // Root SSH keys (NEVER store these!)
     sshPrivateKey: '-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmU...\n-----END OPENSSH PRIVATE KEY-----',
-    
+
     // Database encryption keys
     databaseEncryptionKey: 'db-encryption-master-key-32bytes',
-    
+
     // Token signing keys
     accessTokenPrivateKey: '-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIG...\n-----END EC PRIVATE KEY-----',
     refreshTokenSecret: 'refresh-token-signing-secret-key'
   },
-  
+
   // SECURITY ISSUE: Even development secrets shouldn't be in code
   development: {
     dbPassword: 'devpass123',
@@ -82,13 +82,13 @@ module.exports = {
       testSendgrid: 'SG.test_key_1234567890'
     }
   },
-  
+
   // SECURITY ISSUE: Shared secrets across environments
   shared: {
     internalApiKey: 'shared-internal-api-key-all-envs',
     serviceToServiceToken: 'service-communication-token'
   },
-  
+
   // SECURITY ISSUE: Key rotation history (old keys still accessible!)
   oldKeys: {
     previousJwtSecrets: [
@@ -101,7 +101,7 @@ module.exports = {
       'old-api-key-2'
     ]
   },
-  
+
   // SECURITY ISSUE: Emergency access codes
   emergencyAccess: {
     superAdminPassword: 'EmergencyAdmin123!',
