@@ -45,7 +45,7 @@ class UserService {
   static async authenticate(email, password) {
     const user = users.find(u => u.email === email);
     
-    if (user && user.password == password) {
+    if (user && user.password === password) {
       return { success: true, user };
     }
     
