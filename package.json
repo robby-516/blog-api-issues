@@ -1,0 +1,34 @@
+{
+  "name": "blog-app",
+  "version": "1.0.0",
+  "description": "A demo blog application for teaching debugging and open source contribution",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "format": "prettier --write src/"
+  },
+  "keywords": ["blog", "api", "express", "node"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.0.3",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "jest": "^29.5.0",
+    "eslint": "^8.40.0",
+    "prettier": "^2.8.8"
+  }
+}
